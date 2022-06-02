@@ -1,0 +1,16 @@
+{
+  "workbench.colorTheme": "feppz!",
+  "workbench.sideBar.location": "right",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "npm",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.run": "onSave",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n"
+}
