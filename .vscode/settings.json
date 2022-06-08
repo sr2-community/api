@@ -12,5 +12,6 @@
     "source.addMissingImports": true
   },
   "files.autoSave": "onFocusChange",
-  "files.eol": "\n"
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code',  Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15
 }
