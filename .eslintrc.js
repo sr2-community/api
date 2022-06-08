@@ -1,3 +1,4 @@
+/* eslint-disble */
 module.exports = {
   env: {
     es6: true,
@@ -56,21 +57,14 @@ module.exports = {
     'sonarjs/cognitive-complexity': 'off',
     'sonarjs/no-nested-template-literals': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
-    indent: ['error', 2, { SwitchCase: 1 }],
+    indent: ['error', 2, { SwitchCase: 1, ignoredNodes: ['PropertyDefinition'] }],
     quotes: ['error', 'single', { avoidEscape: true }],
     'simple-import-sort/imports': [
       'error',
       {
         groups: [
           ['^react', '^@?\\w'],
-          [
-            '^app(/.*|$)',
-            '^\\.\\.(?!/?$)',
-            '^\\.\\./?$',
-            '^\\./(?=.*/)(?!/?$)',
-            '^\\.(?!/?$)',
-            '^\\./?$',
-          ],
+          ['^app(/.*|$)', '^\\.\\.(?!/?$)', '^\\.\\./?$', '^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
           ['^\\u0000'],
           ['^.+\\.s?css$'],
         ],
