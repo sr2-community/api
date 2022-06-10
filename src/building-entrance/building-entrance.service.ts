@@ -10,7 +10,7 @@ export class BuildingEntranceService {
   }
 
   findAll() {
-    return `This action returns all buildingEntrance`;
+    return 'This action returns all buildingEntrance';
   }
 
   findOne(id: number) {

@@ -12,6 +12,8 @@ import { ParkingFloorModule } from './parking-floor/parking-floor.module';
 import { ParkingSpaceModule } from './parking-space/parking-space.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ApartmentLayoutModule } from './apartment-layout/apartment-layout.module';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -24,6 +26,8 @@ import { AppService } from './app.service';
     ParkingSpaceModule,
     BuildingFloorModule,
     BuildingEntranceModule,
+    ApartmentLayoutModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],

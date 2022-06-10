@@ -1,11 +1,12 @@
 import { Building } from 'src/building/entities/building.entity';
-import { Column, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, ManyToOne, PrimaryColumn, PrimaryGeneratedColumn } from 'typeorm';
 
+@Entity()
 export class BuildingEntrance {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @PrimaryColumn()
   number: string;
 
   @ManyToOne(() => Building, building => building.id)

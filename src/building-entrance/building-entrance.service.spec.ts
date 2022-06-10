@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
+
 import { BuildingEntranceService } from './building-entrance.service';
 
 describe('BuildingEntranceService', () => {

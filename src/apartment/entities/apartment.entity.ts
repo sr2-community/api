@@ -1,16 +1,7 @@
+import { ApartmentLayout } from 'src/apartment-layout/entities/apartment-layout.entity';
 import { BuildingEntrance } from 'src/building-entrance/entities/building-entrance.entity';
 import { BuildingFloor } from 'src/building-floor/entities/building-floor.entity';
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
-
-enum Layout {
-  layout1A = '1A',
-  layout1B = '1B',
-  layout2A = '2A',
-  layout2B = '2B',
-  layout3A = '2B',
-}
-
-type LayoutType = keyof typeof Layout;
 
 @Entity()
 export class Apartment {
@@ -27,5 +18,5 @@ export class Apartment {
   entrance: BuildingFloor;
 
   @Column()
-  baseLayout: LayoutType;
+  layout: ApartmentLayout;
 }

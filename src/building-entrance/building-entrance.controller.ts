@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { BuildingEntranceService } from './building-entrance.service';
+import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
+
 import { CreateBuildingEntranceDto } from './dto/create-building-entrance.dto';
 import { UpdateBuildingEntranceDto } from './dto/update-building-entrance.dto';
+import { BuildingEntranceService } from './building-entrance.service';
 
 @Controller('building-entrance')
 export class BuildingEntranceController {
