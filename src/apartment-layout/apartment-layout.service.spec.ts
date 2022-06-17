@@ -1,4 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
+
 import { ApartmentLayoutService } from './apartment-layout.service';
 
 describe('ApartmentLayoutService', () => {

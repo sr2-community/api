@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
-import { ApartmentLayoutService } from './apartment-layout.service';
+
 import { ApartmentLayoutController } from './apartment-layout.controller';
+import { ApartmentLayoutService } from './apartment-layout.service';
 
 @Module({
   controllers: [ApartmentLayoutController],
-  providers: [ApartmentLayoutService]
+  providers: [ApartmentLayoutService],
 })
 export class ApartmentLayoutModule {}

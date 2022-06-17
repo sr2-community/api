@@ -95,7 +95,9 @@ Root
 SuperAdmin
 Admin
 ApartmentOwner
-Resident
+ApartmentResident
+ParkingOwner
+ParkingResident
 Editor
 Moderator
 Guest

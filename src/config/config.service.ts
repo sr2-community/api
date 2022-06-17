@@ -4,9 +4,7 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 require('dotenv').config();
 
 class ConfigService {
-  constructor(private env: { [k: string]: string | undefined }) {
-    // construcs
-  }
+  constructor(private env: { [k: string]: string | undefined }) {}
 
   private getValue(key: string, throwOnMissing = true): string {
     const value = this.env[key];
@@ -30,10 +28,14 @@ class ConfigService {
       username: this.getValue('POSTGRES_USER'),
       password: this.getValue('POSTGRES_PASSWORD'),
       database: this.getValue('POSTGRES_DATABASE'),
-      entities: ['src/**/*.entity.ts}'],
-      migrationsTableName: 'migration',
-      migrations: ['src/migrations/*.ts'],
+      entities: ['src/**/*.entity.js'],
+      migrationsTableName: 'migrations',
+      migrations: ['dist/migrations/*.js'],
+      migrationsRun: true,
       ssl: this.isProduction(),
+      synchronize: true,
+      autoLoadEntities: true,
+      logging: true,
     };
   }
 }

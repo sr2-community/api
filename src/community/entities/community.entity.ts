@@ -1,6 +1,6 @@
-import { Column } from 'typeorm';
+import { BaseEntity, Column } from 'typeorm';
 
-export class Community {
+export class Community extends BaseEntity {
   @Column()
   options: string;
 }

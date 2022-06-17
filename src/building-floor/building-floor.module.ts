@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
-import { BuildingFloorService } from './building-floor.service';
+
 import { BuildingFloorController } from './building-floor.controller';
+import { BuildingFloorService } from './building-floor.service';
 
 @Module({
   controllers: [BuildingFloorController],
-  providers: [BuildingFloorService]
+  providers: [BuildingFloorService],
 })
 export class BuildingFloorModule {}

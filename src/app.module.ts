@@ -2,18 +2,20 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { ApartmentModule } from './apartment/apartment.module';
+import { ApartmentLayoutModule } from './apartment-layout/apartment-layout.module';
 import { BuildingModule } from './building/building.module';
 import { BuildingEntranceModule } from './building-entrance/building-entrance.module';
 import { BuildingFloorModule } from './building-floor/building-floor.module';
 import { CommunityModule } from './community/community.module';
 import { configService } from './config/config.service';
 import { ParkingModule } from './parking/parking.module';
-import { ParkingFloorModule } from './parking-floor/parking-floor.module';
+import { ParkingLevelModule } from './parking-level/parking-level.module';
 import { ParkingSpaceModule } from './parking-space/parking-space.module';
+import { UserModule } from './user/user.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ApartmentLayoutModule } from './apartment-layout/apartment-layout.module';
-import { UserModule } from './user/user.module';
+import { PersonModule } from './person/person.module';
+import { ContactModule } from './contact/contact.module';
 
 @Module({
   imports: [
@@ -22,12 +24,14 @@ import { UserModule } from './user/user.module';
     BuildingModule,
     ApartmentModule,
     ParkingModule,
-    ParkingFloorModule,
+    ParkingLevelModule,
     ParkingSpaceModule,
     BuildingFloorModule,
     BuildingEntranceModule,
     ApartmentLayoutModule,
     UserModule,
+    PersonModule,
+    ContactModule,
   ],
   controllers: [AppController],
   providers: [AppService],

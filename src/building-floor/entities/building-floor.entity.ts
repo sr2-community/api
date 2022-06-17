@@ -1,7 +1,9 @@
-import { Building } from 'src/building/entities/building.entity';
-import { Column, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { BaseEntity, Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
-export class BuildingFloor {
+import { Building } from 'src/building/entities/building.entity';
+
+@Entity()
+export class BuildingFloor extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
