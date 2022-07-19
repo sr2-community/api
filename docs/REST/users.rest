@@ -1,0 +1,6 @@
+# REST
+@host = http://localhost:5000
+
+###
+
+GET {{host}}/profile HTTP/1.1
