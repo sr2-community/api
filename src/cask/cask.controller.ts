@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { CaskService } from './cask.service';
+import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
+
 import { CreateCaskDto } from './dto/create-cask.dto';
 import { UpdateCaskDto } from './dto/update-cask.dto';
+import { CaskService } from './cask.service';
 
 @Controller('cask')
 export class CaskController {
